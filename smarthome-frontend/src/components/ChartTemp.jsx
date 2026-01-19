@@ -32,8 +32,8 @@ export default function ChartTemp() {
         data: [],
         borderColor: "rgb(255, 99, 132)",
         backgroundColor: "rgba(255, 99, 132, 0.1)",
-        tension: 0.3, // làm đường cong mượt hơn
-        fill: true, // tô nền dưới đường
+        tension: 0.3,
+        fill: true, 
         pointRadius: 3,
         pointHoverRadius: 6,
       },

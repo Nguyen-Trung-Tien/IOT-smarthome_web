@@ -69,7 +69,7 @@ export default function AccessLogTable() {
         const msg = JSON.parse(event.data);
         console.log("WS Message:", msg);
 
-        // 🔥 VỪA QUẸT THẺ → CHƯA LƯU DB (CẦN XÁC NHẬN)
+        // VỪA QUẸT THẺ → CHƯA LƯU DB 
         if (msg.type === "RFID_REQUEST") {
           setPopupTitle("📡 Thẻ được nhận – cần xác nhận");
           setPopupData(msg);
@@ -77,9 +77,9 @@ export default function AccessLogTable() {
           setShowPopup(true);
         }
 
-        // 🔥 ĐÃ LƯU VÀO DATABASE
+        // ĐÃ LƯU VÀO DATABASE
         if (msg.type === "RFID_SAVED") {
-          setPopupTitle("✅ Đã lưu vào Database");
+          setPopupTitle(" Đã lưu vào Database");
           setPopupData(msg);
           setIsRequest(false);
           setShowPopup(true);
@@ -167,7 +167,7 @@ export default function AccessLogTable() {
                 Hủy
               </Button>
               <Button variant="primary" onClick={confirmAccess}>
-                ✅ Xác nhận truy cập
+                Xác nhận truy cập
               </Button>
             </>
           ) : (
