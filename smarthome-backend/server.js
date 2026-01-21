@@ -137,7 +137,7 @@ function connectArduino() {
 
 connectArduino();
 
-// ================== HẸN GIỜ (FIX LỆCH GIÂY) ==================
+// ================== HẸN GIỜ ==================
 setInterval(() => {
   const now = new Date();
   const timeNow = now.toTimeString().slice(0, 8); // HH:MM:SS
